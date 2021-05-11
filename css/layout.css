@@ -1,0 +1,12 @@
+.carousel-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-wrapper {
+    width: 800px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+}

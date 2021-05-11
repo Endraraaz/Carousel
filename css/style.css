@@ -1,0 +1,51 @@
+.slides {
+    display: none;
+    border: solid 1px black;
+    transition: 5s ease-in-out;
+}
+
+.manual-control-previous,
+.manual-control-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+}
+
+.manual-control-next {
+    right: -0.5em;
+}
+
+.manual-control-previous {
+    left: -0.5em;
+}
+
+.manual-control-previous:hover,
+.manual-control-next:hover {
+    color: rgb(97, 97, 97);
+}
+
+.dot-class{
+    margin: -30px;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color:#0d6ce9;
+}
+
