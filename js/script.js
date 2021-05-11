@@ -11,11 +11,6 @@ manualControlNext.setAttribute('onclick', 'plusSlides(1)');
 manualControlPrevious.text = '❮';
 manualControlNext.text = '❯';
 
-let imageClass = carouselWrapper.querySelectorAll("img");
-for (let i = 0; i < carouselWrapperLength; i++) {
-    imageClass[i].className += "slides";
-}
-
 var dotClass = document.createElement("div");
 carouselWrapper.appendChild(dotClass);
 dotClass.className += "dot-class";
@@ -27,3 +22,8 @@ for (let i = 1; i <= carouselWrapperLength; i++) {
     dotClass.appendChild(span);
     span.setAttribute('onclick', 'currentSlide(' + i + ')');
 };
+
+let imageClass = carouselWrapper.querySelectorAll("img");
+for (let i = 0; i < carouselWrapperLength; i++) {
+    imageClass[i].className += "slides";
+}
